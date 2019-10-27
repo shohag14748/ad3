@@ -18,7 +18,7 @@
             border: 1px solid #000;
         }
         .ad300x250 .slide1{
-            background-image: linear-gradient(rgba(0,0,0,.6) ,rgba(0,0,0,.6)),url(image/hurricane-irma_storm.jpg);
+            background-image: linear-gradient(rgba(0,0,0,.75) ,rgba(0,0,0,.75)),url(image/hurricane-irma_storm.jpg);
             height: 100%;
             width: 130%;
             position: absolute;
@@ -27,7 +27,7 @@
             background-size: auto 100%;
             background-position:  center;
             background-repeat: no-repeat;
-            animation: slide1 .8s ease-in;
+            animation: slide1 1s ease-in;
             animation-fill-mode: forwards;
         }
         
@@ -53,7 +53,7 @@
             opacity: 0;
             animation: slide1-text 1.5s ease;
             animation-fill-mode: forwards;
-            animation-delay: 1s;
+            animation-delay: 1.5s;
         }
         @keyframes slide1-text{
             0%{
@@ -75,7 +75,7 @@
             transform: scale(1.5);
             animation: slide2 1.5s ease;
             animation-fill-mode: forwards;
-            animation-delay: 3s;
+            animation-delay: 3.5s;
         }
         
         @keyframes slide2{
@@ -95,7 +95,7 @@
             opacity: 0;
             animation: slide2-image2 1.5s ease;
             animation-fill-mode: forwards;
-            animation-delay: 5s;
+            animation-delay: 5.5s;
         }
         @keyframes slide2-image2{
             0%{
@@ -152,9 +152,9 @@
             background-color: #213e80;
             color: #fff;
             opacity: 0;
-            animation: slide2-text1 4.5s ease;
+            animation: slide2-text1 1.5s ease;
             animation-fill-mode: forwards;
-            animation-delay: 6.5s;
+            animation-delay: 7.5s;
             top: 0;
             transform: scale(0);
         }
@@ -164,6 +164,7 @@
                 opacity: 0;
                 transform: scale(0);
             }
+/*
              33.33%{
                 opacity: 1;
                 transform: scale(1);
@@ -172,9 +173,10 @@
                 opacity: 1;
                 transform: scale(1);
             }
+*/
             100%{
-                opacity: 0;
-                transform: scale(0);
+                opacity: 1;
+                transform: scale(1);
             }
         }
         .ad300x250 .slide2-text span{
@@ -184,9 +186,9 @@
             top: 35px;
             opacity: 0;
             background: #FFB50B;
-            animation: slide2-text1 4s ease;
+            animation: slide2-text1 1.5s ease;
             animation-fill-mode: forwards;
-            animation-delay: 6.5s;
+            animation-delay: 7.5s;
             padding: 5px 10px;
             font-size: 18px;
             right: 5px;
@@ -212,9 +214,9 @@
             right: 17px;
             top: 20px;
             opacity: 0;
-            animation: slide2-text1 4s ease;
+            animation: slide2-text1 1.5s ease;
             animation-fill-mode: forwards;
-            animation-delay: 6.5s;
+            animation-delay: 7.5s;
             transform: scale(0);
         }
 /*
@@ -267,7 +269,7 @@
             background: #213e80;
             animation: slide1-text 1.5s ease;
             animation-fill-mode: forwards;
-            animation-delay: 10.5s;
+            animation-delay: 9.5s;
             border-radius: 10px;
             box-shadow: 2px 3px 5px #fff;
         }
@@ -284,9 +286,10 @@
             position: absolute;
             width: 100px;
             right: 20px;
+            top: 80px;
             animation: plate 1.5s ease;
             animation-fill-mode: forwards;
-            animation-delay: 10.5s;
+            animation-delay: 9.5s;
             opacity: 0;
             transform: scale(0);
         }
@@ -308,7 +311,7 @@
             color: #fff;
             animation: copyright 1s ease;
             animation-fill-mode: forwards;
-            animation-delay: 12s;
+            animation-delay: 11s;
             opacity: 0;
         }
         @keyframes copyright{
