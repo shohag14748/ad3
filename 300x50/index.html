@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gated communities</title>
+    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <style>
+        .ad-wrap{
+            display: inline-block;
+        }
+        
+        .ad300x50{
+            width: 300px;
+            height: 50px;
+            background: #999;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+        .ad300x50 .slide1{
+            background-image:url(image/home.jpg);
+            height: 100%;
+            min-width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background-size: 100% auto;
+            background-position:  center;
+            background-repeat: no-repeat;
+            animation: slide1 1.5s ease-in;
+            animation-fill-mode: forwards;
+        }
+        @keyframes slide1{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .ad300x50 .slide1-text{
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            width: 280px;
+            font-family: 'Domine', serif;
+            font-size: 17.6px;
+            padding: 5px 10px;
+            margin: 0;
+            text-shadow: 0px 0px 30px #000;
+        }
+        
+        
+      
+        
+        .ad300x50 .slide2-image{
+            position: absolute;
+            height: auto;
+            width: 100%;
+            left: 0px;
+            top: -80px;
+            opacity: 0;
+            animation: slide2 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+        }
+        
+        @keyframes slide2{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        
+        .ad300x50 .slide2-text{
+            position: absolute;
+            font-size: 12px;
+            text-transform: capitalize;
+            font-family: 'Domine', serif;
+            font-weight: bold;
+            padding: 7px 5px 6px;
+            border-radius: 5px;
+            right: 2px;
+            background-color: #213e80;
+            color: #fff;
+            opacity: 0;
+            animation: slide2 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+            top: 2px;
+            margin: 0;
+            width: 140px;
+        }
+        .ad300x50 .camera{
+            position: absolute;
+            width: 35px;
+            transform: rotateY(180deg);
+            right: 0px;
+            top: 3px;
+            opacity: 0;
+            animation: slide2 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+        }
+        .ad300x50 .slide2-text span{
+            display: block;
+            position: absolute;
+            text-transform: capitalize;
+            top: 25px;
+            opacity: 0;
+            color: #212121;
+            background: #FFB50B;
+            animation: slide2-text-span 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 4.5s;
+            padding: 3px 5px;;
+            font-size: 13px;
+            right: 5px;
+            border-radius: 5px;
+            transform: scale(0);
+            
+        }
+         @keyframes slide2-text-span{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .ad300x50 .slide2-text2{
+            position: absolute;
+            font-size: 9px;
+            text-transform: capitalize;
+            font-family: 'Domine', serif;
+            padding: 3px 2px;
+            border-radius: 5px;
+            left: 1px;
+            bottom: 2px;
+            margin: 0;
+            line-height: 10px;
+            max-width: 140px;
+            text-align: center;;
+            color: #fff;
+            background-color: #213e80;
+            box-shadow: 1px 2px 2px #fff;
+            opacity: 0;
+            animation: ad300x50-slide2-text2 6s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 6s;
+            z-index: 1111
+        }
+        
+        @keyframes ad300x50-slide2-text2{
+            0%{
+                bottom: -50px;
+                opacity: 0;
+            }
+            25%{
+                opacity: 1;
+                bottom: 2px;
+            }
+            75%{
+                bottom: 2px;
+                opacity: 1;
+            }
+            100%{
+                bottom: -50px;
+                opacity: 0;
+            }
+        }
+        
+
+        .ad300x50 .slide3-text{
+            position: absolute;
+            color: #fff;
+            font-family: 'Domine', serif;
+            font-size: 13px;
+            padding: 3px 5px;
+            margin: 0;
+            width: 130px;
+            text-align: center;
+            bottom: 12px;
+            left: 2px;
+            opacity: 0;
+            background: #213e80;
+            animation: slide1-text 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 11.5s;
+            border-radius: 5px;
+            box-shadow: 2px 3px 5px #fff;
+        }
+        @keyframes slide1-text{
+            0%{
+                bottom: -40px;
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .ad300x50 .plaque{
+            position: absolute;
+            width: 45px;
+            right: 105px;
+            top: 21px;
+            animation: plate 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 11.5s;
+            opacity: 0;
+            transform: scale(0);
+        }
+        @keyframes plate{
+            0%{
+                opacity: 0;
+                transform: scale(0);
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .ad300x50 .copyright{
+            position: absolute;
+            bottom: 0px;left: 2px;
+            margin: 0;
+            font-size: 10px;
+            color: #fff;
+            animation: copyright 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 13s;
+            opacity: 0;
+        }
+        @keyframes copyright{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        
+        
+        
+       
+        
+        
+    </style>
+</head>
+<body>
+   
+  
+   <!-- ad 300x50 start -->
+   <a href="https://callowayroofingfl.com/oviedo-fl-weather-storm-dates/?utm_source=geoAddress&utm_medium=mobile&utm_content=html5ad2&utm_campaign=Oviedo" class="ad-wrap">
+       <div class="ad300x50">
+          <div class="slide1">
+              <P class="slide1-text">The <b>Number one victim</b> of storm related damage in Florida?</P>
+          </div>
+          <div class="slide2">
+              <img src="image/Gated%20communities.jpg" alt="" class="slide2-image">
+              <P class="slide2-text"><b>Gated communities</b><span>That's right.</span></P>
+              <img src="image/Security-Camera-PNG-Picture.png" alt="" class="camera">
+              <p class="slide2-text2">Because homeowners are not aware they may have damage and qualified Calloway inspectors can't gain access.</p>
+          </div>
+          <div class="slide3">
+              <div class="slide3-text">Schedule a free roof inspection</div>
+              <img src="image/Ey5uhwqG.png" alt="" class="plaque">
+              <p class="copyright">&copy; 2019 CRLLC #1331061</p>
+          </div>
+       </div>
+   </a>
+   <!-- ad 300x50 end -->
+     <br>
+     
+    
+</body>
+</html>
